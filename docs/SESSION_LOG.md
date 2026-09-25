@@ -305,3 +305,17 @@ Thêm một mục mới ở đầu phần `Sessions` cho mỗi buổi/feature. K
 
 ### Next step
 - Tạo Git repository ở project root và `.gitignore` dùng chung; xác nhận `node_modules/`, `target/`, secrets và uploads được loại khỏi Git. Sau đó xác minh project chạy độc lập trước khi cấu hình MySQL/Flyway.
+
+## 2026-09-25 — [Round 1] Git monorepo đã push
+
+### Mục tiêu và phạm vi
+- Tạo commit đầu tiên và đưa monorepo lên GitHub theo repository đã cấu hình.
+
+### Đã xác minh
+- Git root là `C:\Users\Public\Learn\E-comerce`; branch local `main` tracking `origin/main`.
+- Commit `e236ae0` (`Init`) tồn tại local; `git ls-remote` xác nhận `origin/main` trỏ đúng commit này.
+- Working tree sạch sau push.
+- `.gitignore` loại dependencies/build output/upload; các file source và docs được commit.
+
+### Next step
+- Xác minh FE/BE chạy độc lập; tiếp đó cấu hình MySQL + Flyway và hoàn thành luồng FE → BE → DB.

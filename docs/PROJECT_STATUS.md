@@ -44,8 +44,8 @@ Trang này là điểm bắt đầu cho phiên ChatGPT/Codex mới. Dùng nội 
 
 - Đã khởi tạo scaffold React/Vite trong `e_commerce_fe/` và Spring Boot trong `e_commerce_be/` tại project root `C:\Users\Public\Learn\E-comerce`; cấu trúc folder đã được chốt theo hiện trạng và ghi trong `PROJECT_STRUCTURE.md`.
 - Frontend còn trang mẫu Vite. Backend có Maven, Java 21, Spring Boot 4.1.1, JPA và WebMVC; project khai báo WAR packaging. Chưa có dependency MySQL/Flyway hoặc datasource config trong `application.yaml`.
-- Chưa tìm thấy Git repository tại root hoặc hai project con. Chưa chạy build/runtime check; chưa có DB migration hoặc luồng FE → BE → DB.
-- Next: khởi tạo một Git monorepo ở project root với ignore rules; sau đó xác minh FE/BE chạy, cấu hình MySQL + Flyway và tiến tới endpoint DB rồi FE gọi BE.
+- Đã khởi tạo Git monorepo tại root, commit `e236ae0` (`Init`) đã push lên `origin/main` và xác minh remote có cùng commit; working tree sạch. Chưa chạy build/runtime check; chưa có DB migration hoặc luồng FE → BE → DB.
+- Next: xác minh FE/BE chạy độc lập; sau đó cấu hình MySQL + Flyway, tạo endpoint kiểm tra DB và để FE gọi BE.
 ## Tài liệu chuẩn và thứ tự ưu tiên
 
 1. `PROJECT_STATUS.md` — trạng thái và các việc tiếp theo hiện tại.
@@ -74,6 +74,7 @@ Các quyết định mới được user xác nhận trong `DATABASE_DESIGN.md` 
 ## Điều kiện để ChatGPT thấy docs
 
 Các file trên ổ đĩa không tự động xuất hiện trong mọi cuộc trò chuyện ChatGPT. Để bắt đầu phiên trong ChatGPT, mở chat bên trong Project E-commerce và thêm/cập nhật các file docs vào Project sources. Codex cần được mở tại workspace có code/docs hoặc được cấp quyền đọc/ghi thư mục docs chung. Nếu có nhiều bản copy, `C:\Users\Public\Learn\E-comerce\docs` là vị trí shared knowledge được chỉ định.
+
 
 
 
