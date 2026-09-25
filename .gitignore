@@ -1,0 +1,28 @@
+# Frontend dependencies and build output
+**/node_modules/
+**/dist/
+**/.vite/
+
+# Backend build output
+**/target/
+
+# Local secrets
+.env
+.env.*
+!.env.example
+**/application-local.yml
+**/application-local.yaml
+**/application-local.properties
+
+# Uploaded product images
+/e_commerce_be/uploads/products/**
+!/e_commerce_be/uploads/products/.gitkeep
+
+# Logs and temporary files
+*.log
+
+# IDE and operating system files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
